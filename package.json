@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "pet-care-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "services": "docker compose up -d",
+    "dev": "node --watch --env-file=.env app.js",
+    "build": "npm install",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.2",
+    "multer": "^2.0.2",
+    "redis": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=22.5.0 <23.0.0"
+  }
+}
